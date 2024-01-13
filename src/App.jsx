@@ -2,6 +2,7 @@
 import './App.css'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
+import Iphone15 from './components/Iphone15'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <p>Save up to ₹8000.00 instantly on eligible products with HDFC Bank Credit Cards.* Plus No Cost EMI from most leading banks.‡ <a className=' ml-2 text-blue-700 hover:underline' href="#">Shop now &gt;</a></p>
       </div>
       <HeroSection/>
+      <Iphone15/>
     </main>
     </>
   )
