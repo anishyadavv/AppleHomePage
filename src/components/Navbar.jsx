@@ -4,7 +4,7 @@ import search from '../assets/search.svg';
 
 const Navbar = () => {
   return (
-    <div className='bg-black/30 fixed backdrop-blur text-white/80 flex items-center w-full justify-between px-4 lg:px-44 text-xs'>
+    <div className='bg-black/30 fixed z-10 backdrop-blur text-white/80 flex items-center w-full justify-between px-4 lg:px-44 text-xs'>
       <div><img className='text-white w-5 lg:w-4' src={logo} alt="logo" /></div>
       <div className='lg:flex items-center justify-between w-full px-10 hidden'>
         <a  className="hover:text-white" href="#">Store</a>

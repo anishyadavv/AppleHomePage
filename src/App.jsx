@@ -3,6 +3,7 @@ import './App.css'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import Iphone15 from './components/Iphone15'
+import AppleWatch9 from './components/AppleWatch9'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       </div>
       <HeroSection/>
       <Iphone15/>
+      <AppleWatch9/>
     </main>
     </>
   )
