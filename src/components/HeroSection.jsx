@@ -1,7 +1,8 @@
 
 const HeroSection = () => {
   return (
-    <div className='h-screen bg-top bg-150% lg:bg-90% text-white bg-no-repeat md:bg-iPhonemd bg-iPhonesm lg:bg-iPhone15l lg:bg-top'>
+    <div className='h-screen relative bg-top bg-150% lg:bg-90% text-white bg-no-repeat md:bg-iPhonemd bg-iPhonesm lg:bg-iPhone15l lg:bg-top' style={{backgroundSize:"auto 100%"}}>
+        {/* <img src={iphone15pro} alt="i phone 15 pro" className="h-[500px] max-w-full absolute overflow-hidden" /> */}
         <div className="flex flex-col items-center pt-8 lg:pt-6">
             <h1 className=" text-[30px] md:text-[55px] font-semibold">iPhone 15 Pro</h1>
             <p className=" text-[20px] md:text-[30px] lg:-mt-3">Titanium. So strong. So light. So Pro.</p>
