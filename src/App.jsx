@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import Iphone15 from './components/Iphone15'
 import AppleWatch9 from './components/AppleWatch9'
+import Products from './components/Products'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <HeroSection/>
       <Iphone15/>
       <AppleWatch9/>
+      <Products/>
     </main>
     </>
   )

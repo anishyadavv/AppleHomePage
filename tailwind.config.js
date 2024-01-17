@@ -10,6 +10,10 @@ export default {
       iPhone15sm: 'url("./src/assets/iphone15sm.jpg")',
       iPhone15md: 'url("./src/assets/iphone15md.jpg")',
       iPhone15lg: 'url("./src/assets/iphone15lg.jpg")',
+      appleWatchUltralg: 'url("./src/assets/apple_watch_ultra2_large_2x.jpg")',
+      appleWatchUltramd: 'url("./src/assets/apple_watch_ultra2_medium_2x.jpg")',
+      appleWatchUltrasm: 'url("./src/assets/apple_watch_ultra2_small_2x.jpg")',
+
     },
     backgroundSize: {
       "90%": "200%",
