@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {},
     backgroundImage: {
@@ -13,7 +16,6 @@ export default {
       appleWatchUltralg: 'url("/src/assets/apple_watch_ultra2_large_2x.jpg")',
       appleWatchUltramd: 'url("/src/assets/apple_watch_ultra2_medium_2x.jpg")',
       appleWatchUltrasm: 'url("/src/assets/apple_watch_ultra2_small_2x.jpg")',
-
     },
     backgroundSize: {
       "90%": "200%",
@@ -23,6 +25,7 @@ export default {
       "4/5": "4 / 5",
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 };
 
