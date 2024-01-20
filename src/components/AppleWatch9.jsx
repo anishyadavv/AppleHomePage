@@ -9,7 +9,7 @@ const AppleWatch9 = () => {
         <video autoPlay muted className="hidden lg:block">
             <source src={appleWatch9} type="video/mp4" />
         </video>
-        <video autoPlay muted className="md:hidden"  >
+        <video autoPlay muted className="md:hidden h-[600px] object-cover"  >
             <source src={appleWatch9sm} type="video/mp4" />
         </video>
         <video autoPlay muted className="hidden md:block lg:hidden" >

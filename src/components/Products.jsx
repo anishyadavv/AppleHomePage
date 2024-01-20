@@ -92,7 +92,7 @@ const Products = () => {
             </div>
         </div>
         <img className="hidden 2xl:block" src={Series9lg} alt="apple watch ultra" />
-        <img className=" hidden md:block 2xl:hidden h-[635px] object-cover" src={Series9md} alt="apple watch ultra" />
+        <img className=" hidden md:block 2xl:hidden md:h-[46vw] lg:h-[635px] object-cover " src={Series9md} alt="apple watch ultra" />
         <img className=" md:hidden overflow-hidden h-[550px] object-cover" src={Series9sm} alt="apple watch ultra" />
       </div>
 
