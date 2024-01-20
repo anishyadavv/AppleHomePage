@@ -3,7 +3,7 @@ import Iphone15sm from "../assets/iphone15sm.jpg";
 
 const Iphone15 = () => {
   return (
-    <div className='mt-3 text-black ' style={{backgroundSize:"auto 100%"}}>
+    <div className='mt-3 text-black '>
         <div className="absolute w-full flex flex-col items-center pt-8 lg:pt-6">
             <h1 className=" text-[30px] md:text-[55px] font-semibold">iPhone 15</h1>
             <p className=" text-[20px] md:text-[30px] lg:-mt-3">New camerra. New design. Newphoria.</p>
