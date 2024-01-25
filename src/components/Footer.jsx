@@ -111,7 +111,6 @@ const Footer = () => {
                         <a className="mt-2 hover:underline" href="">Apple in Healthcare</a>
                         <a className="mt-2 hover:underline" href="">Healt on Apple Watch</a>
                     </div>
-
                 <div className="mt-2 lg:hidden">
                     <hr />
                 </div>
