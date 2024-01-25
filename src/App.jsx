@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Iphone15 from './components/Iphone15'
 import AppleWatch9 from './components/AppleWatch9'
 import Products from './components/Products'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Iphone15/>
       <AppleWatch9/>
       <Products/>
+      <Footer/>
     </main>
     </>
   )
