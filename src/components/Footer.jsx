@@ -1,5 +1,12 @@
 
 const Footer = () => {
+
+    const handleClick = (e)=>{
+       const id = e.target.getAttribute('id');
+        const accordian = document.getElementById(`${id}1`);
+        accordian.classList.toggle('hidden');
+        accordian.classList.toggle('flex');
+    }
   return (
     <div className="mt-2 bg-stone-100 text-[13px] lg:px-[10vw] px-3 pt-4 text-gray-500">
         <div className=" mb-5 text-[12px]">
@@ -16,8 +23,8 @@ const Footer = () => {
 
         <div className="grid lg:grid-cols-5 mt-4">
             <div className="flex flex-col">
-                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2"> Shop and Learn</p>
-                <div className="flex-col hidden lg:flex">
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2" id="shop" onClick={handleClick}> Shop and Learn</p>
+                <div className="flex-col hidden lg:flex" id="shop1">
                     <a className="mt-2 hover:underline" href="">Store</a>
                     <a className="mt-2 hover:underline" href="">Mac</a>
                     <a className="mt-2 hover:underline" href="">iPad</a>
@@ -32,8 +39,8 @@ const Footer = () => {
                 <div className="mt-2 lg:hidden">
                     <hr />
                 </div>
-                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default mt-2">Apple Wallet</p>
-                <div className="mt-2 hidden lg:block">
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default mt-2" id="wallet" onClick={handleClick}>Apple Wallet</p>
+                <div className="mt-2 hidden lg:block" id="wallet1">
                     <a className="hover:underline" href="">Wallet</a>
                 </div>
                 <div className="mt-2 lg:hidden">
@@ -41,8 +48,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-col">
-                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2"> Account</p>
-                <div className="hidden flex-col lg:flex">
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2" id="account" onClick={handleClick}> Account</p>
+                <div className="hidden flex-col lg:flex" id="account1">
                     <a className="mt-2 hover:underline" href="">Manage Your Apple ID</a>
                     <a className="mt-2 hover:underline" href="">Apple Store Account</a>
                     <a className="mt-2 hover:underline" href="">iCloud.com</a>
@@ -60,10 +67,10 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-col">
-                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2">
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2" id="store" onClick={handleClick}>
                     Apple Store
                 </p>
-                <div className="hidden flex-col lg:flex">
+                <div className="hidden flex-col lg:flex" id="store1">
                     <a className="mt-2 hover:underline" href="">Find a Store</a>
                     <a className="mt-2 hover:underline" href="">Genius Bar</a>
                     <a className="mt-2 hover:underline" href="">Today at Apple</a>
@@ -79,34 +86,41 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-col">
-                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2">For Business</p>
-                <div className="hidden flex-col lg:flex">
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2" id="business" onClick={handleClick}>For Business</p>
+                <div className="hidden flex-col lg:flex" id="business1">
                     <a className="mt-2 hover:underline" href="">Apple and Business</a>
                     <a className="mt-2 hover:underline" href="">Shop for Business</a>
                 </div>
                 <div className="mt-2 lg:hidden">
                     <hr />
                 </div>
-                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2 ">
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2 " id="education" onClick={handleClick}>
                     For Education
                 </p>
-                <div className="hidden flex-col lg:flex">
+                <div className="hidden flex-col lg:flex" id="education1">
                     <a className="mt-2 hover:underline" href="">Apple and Education</a>
                     <a className="mt-2 hover:underline" href="">Shop for Education</a>
                     <a className="mt-2 hover:underline" href="">Shop for Univesity</a>
-                    <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2 hover:underline">For Healthcare</p>
-                    <a className="mt-2 hover:underline" href="">Apple in Healthcare</a>
-                    <a className="mt-2 hover:underline" href="">Healt on Apple Watch</a>
                 </div>
+                <div className="mt-2 lg:hidden">
+                    <hr />
+                </div>
+
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2 " id="health" onClick={handleClick}>For Healthcare</p>
+                    <div className="hidden flex-col lg:flex" id="health1">
+                        <a className="mt-2 hover:underline" href="">Apple in Healthcare</a>
+                        <a className="mt-2 hover:underline" href="">Healt on Apple Watch</a>
+                    </div>
+
                 <div className="mt-2 lg:hidden">
                     <hr />
                 </div>
             </div>
             <div className="flex flex-col">
-                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2">
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2" id="values" onClick={handleClick}>
                     Apple Values
                 </p>
-                <div className="hidden flex-col lg:flex">
+                <div className="hidden flex-col lg:flex" id="values1">
                     <a className="mt-2 hover:underline" href="">Acdessibilty</a>
                     <a className="mt-2 hover:underline" href="">Education</a>
                     <a className="mt-2 hover:underline" href="">Environment</a>
@@ -116,8 +130,8 @@ const Footer = () => {
                 <div className="mt-2 lg:hidden">
                     <hr />
                 </div>
-                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2">About Apple</p>
-                <div className="hidden flex-col lg:flex">
+                <p className=" text-gray-800 lg:font-semibold  cursor-pointer lg:cursor-default  mt-2" id="about" onClick={handleClick}>About Apple</p>
+                <div className="hidden flex-col lg:flex" id="about1">
                     <a className="mt-2 hover:underline" href="">Newsroom</a>
                     <a className="mt-2 hover:underline" href="">Apple Leadership</a>
                     <a className="mt-2 hover:underline" href="">Career Opportunities</a>
