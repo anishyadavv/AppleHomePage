@@ -1,11 +1,12 @@
-
+import { lazy,Suspense } from 'react'
 import './App.css'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import Iphone15 from './components/Iphone15'
-import AppleWatch9 from './components/AppleWatch9'
 import Products from './components/Products'
 import Footer from './components/Footer'
+import image from './assets/appleWatch9.webp'
+const AppleWatch9 = lazy(()=>import('./components/AppleWatch9'));
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
       </div>
       <HeroSection/>
       <Iphone15/>
-      <AppleWatch9/>
+      <Suspense fallback={<img src={image} alt="apple watch 9" />}>
+        <AppleWatch9/>
+      </Suspense>
       <Products/>
       <Footer/>
     </main>
